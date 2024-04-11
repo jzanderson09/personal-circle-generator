@@ -1,5 +1,8 @@
 html {
+    border: 1px solid black;
     box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px black;
+    font-size: 62.5%;
 }
 
 *,
@@ -9,20 +12,25 @@ html {
 }
 
 body {
-    border: 1px solid black;
-    height: 100vh;
-    width: 100%;
+    background: rgba(0, 100, 200, 5%);
+    border: 3px solid black;
+    box-shadow: 3px 3px 3px 3px black;
+    height: 97vh;
+    width: 98%;
 }
 
 #container {
-    border: 1px solid black;
+    background: #FFFFFF;
+    border: 3px solid black;
     border-radius: 10%;
+    box-shadow: 3px 3px 3px 3px black;
     display: flex;
     flex-flow: row wrap;
     height: 75vh;
     margin: 2% auto;
     width: 80%;
 }
+
 
 canvas {
     border-radius: 10%;
@@ -31,7 +39,37 @@ canvas {
 }
 
 button {
-    height: 10vh;
-    margin: 2% auto;
-    width: 10%;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px black;
+    font-size: 1.6rem;
+    height: 8vh;
+    margin: 4% auto;
+    width: 20%;
+}
+
+button:hover {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 850px) {
+    button {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    button {
+        font-size: 1.5rem;
+        height: 8vh;
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    button {
+        height: 10vh;
+        width: 20%;
+    }
 }
